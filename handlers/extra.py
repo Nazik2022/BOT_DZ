@@ -1,5 +1,5 @@
 from aiogram import types, Dispatcher
-from confing import dp, bot
+from config import dp, bot
 import random
 
 
