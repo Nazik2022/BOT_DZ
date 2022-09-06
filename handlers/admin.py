@@ -1,5 +1,5 @@
 from aiogram import types, Dispatcher
-from confing import dp, bot, ADMIN
+from config import dp, bot, ADMIN
 import random
 
 async def game(message: types.Message):

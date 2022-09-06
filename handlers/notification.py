@@ -1,7 +1,7 @@
 import asyncio
 import aioschedule
 from aiogram import types, Dispatcher
-from confing import bot
+from config import bot
 
 
 async def get_chat_id(message: types.Message):

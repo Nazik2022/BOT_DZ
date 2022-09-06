@@ -2,7 +2,7 @@ from aiogram import types, Dispatcher
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 
-from confing import bot
+from config import bot
 from handlers.keyboards.client_kb import names_markup
 from databace import bot_dp
 

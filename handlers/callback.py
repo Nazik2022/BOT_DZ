@@ -1,7 +1,7 @@
 from aiogram import types, Dispatcher
 from aiogram.types import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 
-from confing import dp, bot
+from config import dp, bot
 
 async def quiz_2(call: types.CallbackQuery):
     markup = InlineKeyboardMarkup()

@@ -1,5 +1,5 @@
 import sqlite3
-from confing import bot
+from config import bot
 
 def sql_create():
     global dp, cursor
@@ -7,7 +7,7 @@ def sql_create():
     cursor = dp.cursor()
 
     if dp:
-        print("База данных подключенп!")heroku
+        print("База данных подключенп!")
     dp.execute("CREATE TABLE IF NOT EXISTS menu ("
                "photo TEXT, name TEXT PRIMARY KEY,"
                 "description TEXT, price INTEGER)"
