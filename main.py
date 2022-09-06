@@ -2,13 +2,13 @@
 from aiogram.utils import executor
 from config import dp
 
-from handlers import admin, extra, client, callback, fsmAdminMenu, notification
-from databace import bot_dp
-import asyncio
+from handlers import  extra
+# from databace import bot_dp
+# import asyncio
 
 
-async def on_startup(_):
-    asyncio.create_task(notification.scheduler())
+# async def on_startup(_):
+#     asyncio.create_task(notification.scheduler())
     # bot_dp.sql_create()
 
 
@@ -21,7 +21,7 @@ async def on_startup(_):
 extra.register_extra_handlers(dp)
 
 if __name__=="__main__":
-    executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+    executor.start_polling(dp, skip_updates=True,)
 
 
 
