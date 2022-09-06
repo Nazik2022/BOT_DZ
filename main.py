@@ -1,4 +1,3 @@
-
 from aiogram.utils import executor
 from config import dp
 
@@ -18,8 +17,5 @@ client.register_client_handlers(dp)
 callback.register_callback_handlers(dp)
 extra.register_extra_handlers(dp)
 
-if __name__=="__main__":
+if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
-
-
-
