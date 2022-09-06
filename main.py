@@ -1,9 +1,8 @@
 from aiogram.utils import executor
-from config import dpgit
+from config import dp
 from handlers import extra, client, callback, fsmAdminMenu, notification
 from databace import bot_dp
 import asyncio
-
 
 async def on_startup(_):
     asyncio.create_task(notification.scheduler())
